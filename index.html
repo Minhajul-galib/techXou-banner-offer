@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechXou Banner Offer</title>
+    <link rel="shortcut icon" href="asset/img/fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="techxou-info">
+            <img src="asset/img/logo.png" alt="">
+            <h4>Banner Offer increase your celebration with  TechXou</h4>
+        </div>
+        <div class="form-div">
+            <form method="post" action="https://techxou.com/" name="techXouBannerOffere">
+                <div class="field-div">
+                    <input class="name" type="text" name="Name" placeholder="Your Full Name" required>
+                </div>
+                <div class="field-div">
+                    <input class="email" type="email" name="Email" placeholder="Your Email Address" required>
+                </div>
+                <div class="field-div">
+                    <input class="fb-page" type="text" name="Facebook Page Link" placeholder="Facebook Page Link" required>
+                </div>
+                <div class="field-div">
+                    <input class="website" type="text" name="Website Link" placeholder="Your Website Link">
+                </div>
+                <div class="banner-want">
+                    <h5>Select what do you want.</h5>
+                    <div class="banner-want-div">
+                        <div class="want-check d-flex gap-2">
+                            <input type="checkbox" id="New-Year" name="New Year Banner" value="New Year">
+                            <label for="New-Year">New Year Banner</label>
+                        </div>
+                        <div class="want-check d-flex gap-2">
+                            <input type="checkbox" id="21-February" name="21 February Banner" value="21 February">
+                            <label for="21-February">21 February Banner</label>
+                        </div>
+                        <div class="want-check d-flex gap-2">
+                            <input type="checkbox" id="26-March" name="26 March Banner" value="26 March">
+                            <label for="26-March">26 March Banner</label>
+                        </div>
+                        <div class="want-check d-flex gap-2">
+                            <input type="checkbox" id="16-December" name="16 December Banner" value="16 December">
+                            <label for="16-December">16 December Banner</label>
+                        </div>
+                        <div class="want-check d-flex gap-2">
+                            <input type="checkbox" id="Eid-al-Fitr" name="Eid al-Fitr Banner" value="Eid al-Fitr">
+                            <label for="Eid-al-Fitr">Eid al-Fitr Banner</label>
+                        </div>
+                        <div class="want-check d-flex gap-2">
+                            <input type="checkbox" id="Eid-al-Adha" name="Eid al-Adha Banner" value="Eid al-Adha">
+                            <label for="Eid-al-Adha">Eid al-Adha Banner</label>
+                        </div>
+                        <div class="want-check d-flex gap-2">
+                            <input type="checkbox" id="Durga-Puja" name="Durga Puja Banner" value="Durga Puja">
+                            <label for="Durga-Puja">Durga Puja Banner</label>
+                        </div>
+                        <div class="want-check d-flex gap-2">
+                            <input type="checkbox" id="Christmas-Day" name="Christmas Day Banner" value="Christmas Day">
+                            <label for="Christmas-Day">Christmas Day Banner</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-div">
+                    <input class="form-btn" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz2E73ugiYrlmPWvBIRgHYbckbMHHmY7ex-b-8ip97zG5i5PxU_P0NoLqcXI7oDSFS_/exec'
+        const form = document.forms['techXouBannerOffere']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! Your form is submitted successfully. TechXou Team" ))
+            .then(() => {  window.location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
+
+
+<!-- https://script.google.com/macros/s/AKfycbz2E73ugiYrlmPWvBIRgHYbckbMHHmY7ex-b-8ip97zG5i5PxU_P0NoLqcXI7oDSFS_/exec -->
+
+
+<!-- AKfycbz2E73ugiYrlmPWvBIRgHYbckbMHHmY7ex-b-8ip97zG5i5PxU_P0NoLqcXI7oDSFS_ -->

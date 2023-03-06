@@ -1,0 +1,101 @@
+.main{
+
+    text-align: center;
+    
+    padding: 3% 4%;
+    }
+    .techxou-info{
+    
+    }
+    .techxou-info img{
+    
+    width: 12%;
+    }
+    .techxou-info h4{
+        
+    padding: 1% 0 2%;
+        
+    color: #FE8116;
+    font-size: 1.7vw;
+}
+    .form-div{
+    
+    width: 45%;
+    
+    margin: auto;
+    
+    box-shadow: 0px 0px 8px 4px #fe821626;
+    
+    padding: 2% 2%;
+    }
+    form{
+    
+    }
+    .field-div input{
+    
+    width: 100%;
+    
+    margin-bottom: 9px;
+    
+    font-size: 16px;
+    
+    font-family: serif;
+    
+    padding: 5px 7px;
+    
+    border: 1px solid #ff760045;
+    
+    box-shadow: inset 0px 0px 3px 4px #fe81161a;
+    }
+    .banner-want{
+    
+    text-align: start;
+    
+    padding-top: 14px;
+    }
+    .banner-want-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 5%;
+    }
+    .want-check{
+    
+    }
+    .btn-div{
+
+    }
+    .form-btn {
+        width: 100%;
+        font-size: 16px;
+        background-color: #FE8217;
+        border: none;
+        padding: 7px 0;
+        color: white;
+        font-weight: 500;
+        box-shadow: -1px 1px 8px 3px #562a044d;
+        transition: 1s;
+    }
+    .form-btn:hover {
+        background-color: #cd5f00;
+        box-shadow: 0px 0px 10px 6px #fe82178a;
+        
+    }
+    @media only screen and (max-width: 1140px) {
+        .form-div{
+            width: 61%;
+        }
+        .techxou-info h4{
+            font-size: 2.38vw;
+        }
+      }
+    @media only screen and (max-width: 680px) {
+        .form-div{
+            width: 80%;
+        }
+        .banner-want-div{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .techxou-info h4{
+            font-size: 3vw;
+        }
+      }
